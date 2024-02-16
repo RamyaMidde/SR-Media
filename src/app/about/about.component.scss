@@ -1,8 +1,9 @@
-.header{
-    color:#6495ED;
+.header {
+    color: #6495ED;
     font-size: 23px;
     font-weight: bold;
 }
+
 //Background Image
 .signIn-background {
     position: relative;
@@ -35,8 +36,27 @@
     transform: translate(-50%, -50%);
     color: white;
 
-    h1{
+    h1 {
         font-size: 4rem;
         font-style: italic;
+    }
+}
+
+@media (max-width: 767px) {
+    .signIn-background {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .text-container {
+        h1 {
+            font-size: 1rem;
+            font-style: italic;
+        }
+    }
+
+    .aboutImage {
+        height: 80%;
     }
 }
