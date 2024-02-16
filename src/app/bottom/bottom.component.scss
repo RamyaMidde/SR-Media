@@ -52,9 +52,37 @@ i {
   font-size: 24px;
 }
 
+.quickLinks {
+  margin-left: 3rem;
+}
+
+.follow {
+  margin-left: 6rem;
+}
+
 /* Responsive styles using media queries */
 @media (max-width: 767px) {
-  .main-footer{
-    display: none;
+  .col-sm-6 {
+    flex: 0 0 50.00%;
+    max-width: 50%;
+  }
+
+  .copyright {
+    background-color: rgb(11, 11, 35);
+    width: 100%;
+    color: #b7b7b7;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .follow,
+  .quickLinks {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .follow,
+  .quickLinks {
+    margin-left: 0;
   }
 }
