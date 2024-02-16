@@ -29,37 +29,7 @@
     color: white;
 }
 
-/* Responsive styles using media queries */
-@media (max-width: 767px) {
-    .text-container {
-        position: absolute;
-        top: 15%; /* Adjust the position */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70%;
-        text-align: justify;
-    }
-    .signIn-background {
-        height: auto; /* Change to auto height */
-        position: relative;
-        overflow: hidden;
-        margin-top: 0; /* Remove margin-top */
-    }
-    @media (max-width: 767px) {
-        .hide-on-mobile {
-            display: none;
-        }
-    }
-    
-}
-
-
-/* Add more media queries for other screen sizes if needed */
-
-/* Other styles remain unchanged */
-
 //Flip card
-
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -114,6 +84,47 @@ a {
     font-size: 22px;
     color: black;
 }
+
+/* Responsive styles using media queries */
+@media (max-width: 767px) {
+    .text-container {
+        position: absolute;
+        top: 15%;
+        /* Adjust the position */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: justify;
+    }
+
+    .signIn-background {
+        height: auto;
+        /* Change to auto height */
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media (max-width: 767px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+
+    //Flip card
+
+    .flip-card {
+        background-color: transparent;
+        width: 200px;
+        height: 130px;
+        perspective: 1000px;
+        margin-top: 0 !important;
+    }
+
+}
+
+
+
+
 
 
 //Why Us
