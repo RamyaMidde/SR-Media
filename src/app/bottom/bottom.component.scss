@@ -60,6 +60,37 @@ i {
   margin-left: 6rem;
 }
 
+
+
+
+
+.contact-item {
+  display: flex;
+  align-items: flex-start; 
+  color: white;
+  font-size: 16px; 
+}
+
+.address-icon {
+  margin-right: 8px; 
+  display: flex;
+  align-items: center;
+  color: #b7b7b7 
+
+}
+
+.contact-item i {
+  margin-right: 8px;
+}
+
+.address-text{
+  color: #b7b7b7 
+}
+
+
+
+
+
 /* Responsive styles using media queries */
 @media (max-width: 767px) {
   .col-sm-6 {
