@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'SR-Media-Frontend'`, () => {
+  it(`should have as title 'SR-Media'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('SR-Media-Frontend');
+    expect(app.title).toEqual('SR-Media');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('SR-Media-Frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('SR-Media app is running!');
   });
 });

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SR-Media-Frontend": {
+    "SR-Media": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sr-media-frontend",
+            "outputPath": "dist/sr-media",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "SR-Media-Frontend:build:production"
+              "browserTarget": "SR-Media:build:production"
             },
             "development": {
-              "browserTarget": "SR-Media-Frontend:build:development"
+              "browserTarget": "SR-Media:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SR-Media-Frontend:build"
+            "browserTarget": "SR-Media:build"
           }
         },
         "test": {
